@@ -1,0 +1,975 @@
+﻿<!DOCTYPE html><html lang="en"><head>
+<script src="//assets.adobedtm.com/75133ce79ba1f2c516f7d5f09b683f779a12ac39/satelliteLib-2756bab2480cb6c2674fb064e707912a7e9432b2.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>AIS 5G Cloud Game service</title>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<meta http-equiv="X-UA-Compatible" content="IE=10,9" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0" />
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+<!-- Html Meta -->
+<meta name="description" content="นิยามใหม่ของการเล่นเกม PC และ Console ได้บนมือถือทุกที่ กับเกมชั่นนำกว่า 360 เกม สมัครแพ็กเกจ 299 บาท/เดือน รายละเอียดเพิ่มเติม *528#โทรออก">
+<meta name="keywords" content="เอไอเอส ,ais , 4G, แพ็กเกจใหม่, 4g max, imulti, ishare, postpaid, รายเดือน, AIS Game, Cloud Game, PC , Console, 5G, Casual Game, เกม, เกม PC, เกม Console, เล่นเกม, aragami, asphalt legends, extinction, farming simulator, fort boyard, for the king, Roguelike, tabletop, adventure, lara croft fo, lord of the fallen, pony ride with obstacles, ryse son of rome, shadow tactics, sniper3, styx shard of darkness, tennis game, tennis world tour, tt isle of man, ride on the edge, warhammer chaosbane, wrc 7, yono and the celestial elephants">
+<meta name="thumbnail" content="share.jpg" />
+<meta name="thumbnail_height" content="110">   <!--Fix ขนาดของความสูง ไว้เท่านี้ ไม่เปลี่ยน-->
+<meta name="thumbnail_width" content="75">  <!--Fix ขนาดของความกว้าง ไว้เท่านี้ ไม่เปลี่ยน-->
+<!-- Facebook Propertie -->
+<meta property="og:title" content="AIS 5G Cloud Game service" />
+<meta property="og:description" content="นิยามใหม่ของการเล่นเกม PC และ Console ได้บนมือถือทุกที่ กับเกมชั่นนำกว่า 360 เกม สมัครแพ็กเกจ 299 บาท/เดือน รายละเอียดเพิ่มเติม *528#โทรออก" />
+<meta property="og:image" content="share.jpg" />
+<!-- Tweet Propertie แชร์ Tweet -->
+<meta property="tw:description" content="นิยามใหม่ของการเล่นเกม PC และ Console ได้บนมือถือทุกที่ กับเกมชั่นนำกว่า 360 เกม สมัครแพ็กเกจ 299 บาท/เดือน รายละเอียดเพิ่มเติม *528#โทรออก"/>
+<!-- Google Plus -->
+<meta itemprop="name" content="AIS 5G Cloud Game service">
+<meta itemprop="description" content="นิยามใหม่ของการเล่นเกม PC และ Console ได้บนมือถือทุกที่ กับเกมชั่นนำกว่า 360 เกม สมัครแพ็กเกจ 299 บาท/เดือน รายละเอียดเพิ่มเติม *528#โทรออก">
+<meta itemprop="image" content="share.jpg">
+<!-- apple itunes application -->
+<meta name ="apple-itunes-app" content="app-id=399758084"/>
+<!-- Start SmartBanner configuration -->
+<meta name="smartbanner:title" content="my AIS">
+<meta name="smartbanner:author" content="AIS ให้คุณใช้ชีวิตได้มากกว่า">
+<meta name="smartbanner:price" content="FREE">
+<meta name="smartbanner:price-suffix-google" content=" Download Now">
+<meta name="smartbanner:icon-google" content="https://lh3.googleusercontent.com/zpXlAyDbHvn4Q7WijKM_HPMYTXOOAhVTkKqZQS3K-LX6-NX-QH-ghF4R-dQu2T-fcfls=w300-rw">
+<meta name="smartbanner:button" content="VIEW">
+<meta name="smartbanner:button-url-google" content="https://play.google.com/store/apps/details?id=com.ais.mimo.eservice&hl=en">
+<meta name="smartbanner:enabled-platforms" content="android">
+<meta name="smartbanner:disable-positioning" content="true">
+<meta name="smartbanner:hide-ttl" content="10000">
+<!-- ถ้าต้องการแสดง banner andriod ให้คอมเม้นบรรทัดด้านล่าง -->
+<meta name="smartbanner:enabled-platforms" content="none">
+<link rel="stylesheet" href="../plugins/jpreloader/jpreloader.css" />
+<link rel="stylesheet" href="https://www.ais.co.th/base_interface_th/css/navais_v2.css">
+<link rel="stylesheet" href="https://www.ais.co.th/base_interface_th/fonts/fonts.css">
+<link rel="stylesheet" href="https://www.ais.co.th/base_interface_th/css/jquery.typeahead.css">
+<link rel="stylesheet" href="https://www.ais.co.th/base_interface_th/css/menutypeahead.css">
+<link rel="stylesheet" href="../css/bootstrap.css" />
+<link rel="stylesheet" href="../font/helvetica.css" />
+<link rel="stylesheet" href="../css/custom.css" />
+
+<!-- include plugin swiper -->
+<script src="../plugins/swiper/js/swiper.min.js"></script>
+<link rel="stylesheet" href="../plugins/swiper/css/swiper.css">
+
+<style>
+@media only screen and (min-width: 1021px) and (max-width: 2400px) {
+.cloud_benefit_head{ line-height:1.2; font-size:60px;}
+.cloud_pack_box .maxx_detail{font-size:26px; margin-top: 40px; margin-bottom: 35px;}
+} 
+
+@media screen and (max-width: 600px) {
+.cloud_hilight_head{font-size:24px;}
+.cloud_step4_head{font-size:30px;}
+.cloud_moregame_head{font-size:32px;}
+}
+
+@media screen and (max-width: 500px) {
+.cloud_benefit_head{font-size:22px;}
+}
+</style>
+
+<script type="text/javascript">__th_page = "ais";</script>
+<script type="text/javascript" src="http://hits.truehits.in.th/data/s0029135.js"></script>
+<script type="text/javascript" src="https://lvs.truehits.in.th/datasecure/s0029135.js"></script>
+</head>
+<body class="DNAparallax">
+<!--ais_topbar-->
+<div id="ais_topbar"></div>
+  <!--ais_topbar-->  
+  	<div id="container">
+    <!--  Put Content Here เริ่มต้นเนื้อหา  -->
+    
+<div id="cloud_hilight_holder">
+	<div class="sliding-background"></div>
+    <div class="row row_hilight">
+        <div class="panel t_center">
+        	<div class="cloud_hilight_head">
+            	<div id="cloud_hilight_txt1"><strong>THE FUTURE <div class="t_inline">OF <span style="color:#B5DB00;">GAMES</span></div></strong></div>
+            	<div id="cloud_hilight_txt2" class="t_inline">Experience the new definition </div><br>
+				<div id="cloud_hilight_txt3" class="t_inline">of gaming at your fingertips</div>
+            </div>
+            <div id="cloud_hilight_logo"><img src="../images/ais5g_game_logo.png" class="cloud_hilight_logo"></div>
+            <div id="cloud_hilight_bt"><div class="cloud_hilight_bt" onClick="goToDiv('cloud_pack_box1');">Free trial!</div></div>
+        </div>
+    </div>
+</div>
+    
+<div id="cloud_benefit_holder">
+	<div class="row row_benefit">
+        <div class="panel">
+        	<div id="tvc_screen1" class="tvc_screen">
+        		<img src="../images/tvc1_screen.jpg">
+                <span onClick="loadVid1();"><img src="../images/play_ic.png"></span>
+            </div>
+            <div id="tvc1"></div>
+        </div>
+    </div>
+    <div class="row row_benefit2">
+        <div class="panel t_center">
+        	<div id="cloud_benefit_txt1" class="cloud_benefit_head">
+            	Play the best <div class="t_inline">PC and</div> <div class="t_inline">console games</div><br>
+				<div id="cloud_benefit_txt2" class="t_inline">on your smartphone <i></i><div class="t_inline">anywhere, anytime</div> <div class="t_inline">with full enjoyment</div></div>
+            </div>
+            <ul class="cloud_benefit_box_set">
+                <li id="cloud_benefit1">
+                	<div class="cloud_benefit_box more">
+                    	Over 360 popular <div class="t_inline">games available</div>
+                        <i></i><span>*Games Titles <div class="t_inline">will be updated</div></span>
+                    </div>
+                </li>
+                <li id="cloud_benefit2">
+                	<div class="cloud_benefit_box console">
+                    	No downloads, <i></i><div class="t_inline">or updates game needed</div>
+                    </div>
+                </li>
+                <li id="cloud_benefit3">
+                	<div class="cloud_benefit_box phone">
+                    	Compatible with <div class="t_inline">all smartphones</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="cloud_moregame_holder">
+	<div class="row row_moregame">
+        <div id="cloud_moregame_txt1" class="cloud_moregame_head">
+            Play your favorite games<br>
+            <div id="cloud_moregame_txt2" class="t_inline">over 360 titles</div>
+        </div>
+        <div id="tvc_screen2" class="tvc_screen">
+            <img src="../images/tvc2_screen.jpg">
+            <span onClick="loadVid2();"><img src="../images/play_ic.png"></span>
+        </div>
+        <div id="tvc2"></div>
+    </div>
+    <div class="row row_moregame">
+    	<div class="cloud_moregame_wrap"><a href="https://m.ais.co.th/all_game" target="_blank"><div class="cloud_moregame_bt">See all games</div></a></div>
+    	<div class="col-xs-1 moregame_L">
+        	<div class="row">
+            	<div id="cloud_moregame_pic1" class="col-xs-1 game_cover1 swiper-container">
+                	<div class="swiper-wrapper">
+                    	<div class="swiper-slide">
+                        	<a href="https://www.blacknut.com/p/ais/5g-cloud-game/game/5b87a688dda24039e10c5631" target="_blank">
+                        	<img src="../images/cover/pos1_pic1.jpg">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                        	<a href="https://www.blacknut.com/p/ais/5g-cloud-game/game/5d78a3e0dda24035d0284253" target="_blank">
+                        	<img src="../images/cover/pos1_pic2.jpg">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                        	<a href="https://www.blacknut.com/p/ais/5g-cloud-game/game/5d26e36ddda2400d676972d6" target="_blank">
+                        	<img src="../images/cover/pos1_pic3.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="cloud_moregame_pic2" class="col-xs-1 game_cover2 swiper-container">
+                	<div class="swiper-wrapper">
+                    	<div class="swiper-slide">
+                        	<a href="https://www.blacknut.com/p/ais/5g-cloud-game/game/5c642e52dda2400401337baa" target="_blank">
+                        	<img src="../images/cover/pos2_pic1.jpg">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                        	<a href="https://www.blacknut.com/p/ais/5g-cloud-game/game/5df0ba42dda2401c68870972" target="_blank">
+                        	<img src="../images/cover/pos2_pic2.jpg">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                        	<a href="https://www.blacknut.com/p/ais/5g-cloud-game/game/5b5842ebdda2406402f05ee2" target="_blank">
+                        	<img src="../images/cover/pos2_pic3.jpg">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                        	<a href="https://www.blacknut.com/p/ais/5g-cloud-game/game/5c0e6c66dda2401e24843d66" target="_blank">
+                        	<img src="../images/cover/pos2_pic4.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="cloud_moregame_pic3" class="game_cover3 swiper-container">
+            	<div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="https://www.blacknut.com/p/ais/5g-cloud-game/game/5c9ccb10dda24034ea6bcbb3" target="_blank">
+                        <img src="../images/cover/pos3_pic1.jpg">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.blacknut.com/p/ais/5g-cloud-game/game/5bfff9c2dda240289b1c19ca" target="_blank">
+                        <img src="../images/cover/pos3_pic2.jpg">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.blacknut.com/p/ais/5g-cloud-game/game/5c5c0435dda2407f11796d71" target="_blank">
+                        <img src="../images/cover/pos3_pic3.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-1 moregame_R">
+        	<div class="row">
+            	<div id="cloud_moregame_pic4" class="col-xs-1 game_cover4 swiper-container">
+                	<div class="swiper-wrapper">
+                    	<div class="swiper-slide">
+                        	<a href="https://www.blacknut.com/p/ais/5g-cloud-game/game/5d36c5a8dda2400d67698179" target="_blank">
+                        	<img src="../images/cover/pos4_pic1.jpg">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                        	<a href="https://www.blacknut.com/p/ais/5g-cloud-game/game/59d4a598b25b233f690986c3" target="_blank">
+                        	<img src="../images/cover/pos4_pic2.jpg">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                        	<a href="https://www.blacknut.com/p/ais/5g-cloud-game/game/5cc6e9aedda24018b4bb2baa" target="_blank">
+                        	<img src="../images/cover/pos4_pic3.jpg">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                        	<a href="https://www.blacknut.com/p/ais/5g-cloud-game/game/5a3d30f9b25b233f0e233153" target="_blank">
+                        	<img src="../images/cover/pos4_pic4.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="cloud_moregame_pic5" class="col-xs-1 game_cover5 swiper-container">
+                	<div class="swiper-wrapper">
+                    	<div class="swiper-slide">
+                        	<a href="https://www.blacknut.com/p/ais/5g-cloud-game/game/5daed27adda240147dd92d8d" target="_blank">
+                        	<img src="../images/cover/pos5_pic1.jpg">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                        	<a href="https://www.blacknut.com/p/ais/5g-cloud-game/game/5e187f77dda2400b8784ca2d" target="_blank">
+                        	<img src="../images/cover/pos5_pic2.jpg">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                        	<a href="https://www.blacknut.com/p/ais/5g-cloud-game/game/5c9cd1b4dda24034ea6bcdeb" target="_blank">
+                        	<img src="../images/cover/pos5_pic3.jpg">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                        	<a href="https://www.blacknut.com/p/ais/5g-cloud-game/game/5c9e38c5dda24034ea6bd609" target="_blank">
+                        	<img src="../images/cover/pos5_pic4.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<div id="cloud_pack_holder">
+	<div class="row row_pack_head">
+        <div class="panel t_center">
+        	<div id="cloud_pack_txt" class="cloud_pack_head"><strong>AIS 5G</strong> <b>Cloud Game</b><br>service</div>
+        </div>
+    </div>
+    <div class="row row_pack_box">
+        <div class="col-xs-1 col_std">
+        	<div class="panel">
+            	<div id="cloud_pack_box1" class="cloud_pack_box">
+                	<div class="price">79<span>Baht<br>/Week</span></div><br>
+                    <a href="http://gloft.co/ba140c190" target="_blank"><div class="regis_bt" onclick="cstadb('cloudgaming-en-subscribe');">7 days Free trial</div></a><br>
+                    <div class="only_phone">**Smartphone devices using Android , Computer PC <div class="t_inline">and Mac OS only.</div></div>
+                    <div id="pack_condi_bt" class="condi_bt">More information</div>
+                    <div id="pack_condi_detail" class="condi_detail">
+                    	<ul>
+                            <li>After the 7 days free trial, the monthly service fee is 79 Baht/week. The service can be cancelled anytime</li>
+                            <li>The service is exclusively for AIS customers to enjoy access to over 360 top games on Blacknut by Gameloft</li>
+                            <li>The service is compatible with devices using Android 5.0 and above, Windows, Mac OS and Linux.</li>
+                            <li>The service is for both pre-paid and post-paid customers.</li>
+                            <li>The 79 Baht service fee is VAT inclusive.</li>
+                            <li>After a payment has been made, the service fee is non-refundable. Your usage shall continue until after seven days.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-1 col_std">
+        	<div class="panel">
+            	<div id="cloud_pack_box2" class="cloud_pack_box">
+                	<div class="price">299<span>Baht<br>/month</span></div><br>
+                    <a href="http://gloft.co/39346234" target="_blank"><div class="regis_bt" onclick="cstadb('cloudgaming-en-subscribe');">Subscribe</div></a><br>
+                    <div class="only_phone">**Smartphone devices using Android , Computer PC <div class="t_inline">and Mac OS only.</div></div>
+                    <div id="pack_condi_bt2" class="condi_bt">More information</div>
+                    <div id="pack_condi_detail2" class="condi_detail">
+                    	<ul>
+                            <li>The service will be charge 299 baht per month and auto recurring. You can cancel through application Blacknut by Gameloft any time.</li>
+                            <li>The service is exclusively for AIS customers to enjoy access to over 360 top games on Blacknut by Gameloft</li>
+                            <li>The service is compatible with devices using Android 5.0 and above, Windows, Mac OS and Linux. </li>
+                            <li>The service is for both pre-paid and post-paid customers.</li>
+                            <li>The 299 Baht service fee is VAT inclusive.</li>
+                            <li>After a payment has been made, the service fee is non-refundable. Your usage shall continue until after one month.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row row_pack_box">
+    	<div class="panel">
+        	<div id="cloud_pack_box3" class="cloud_pack_box black">
+                <div class="maxx_detail">
+                	Exclusive offer for AIS post-paid <br>
+                    customers who apply for <strong><div class="t_inline"><a href="https://www.ais.co.th/5g/join-us/postpaid/en/" target="_blank">AIS 5G MAX SPEED</a></div></strong>
+                </div>
+                <a href="https://wapshop.gameloft.com/aisgamecloud" target="_blank"><div class="regis_bt" onclick="cstadb('cloudgaming-en-get-offer');">Get the offer, click</div></a><br>
+                <div class="only_phone">**Smartphone devices using Android , Computer PC <div class="t_inline">and Mac OS only.</div></div>
+                <div id="pack_condi_bt3" class="condi_bt">More information</div>
+                    <div id="pack_condi_detail3" class="condi_detail">
+                    	<ul>
+                            <li>For customers using 699-1999 Baht or more packages, enjoy AIS 5G Cloud Game with free access to over 360 games worth 897 Baht for 90 days.</li>
+                            <li>After pressing the code to get the offer, the customer is required to download and install Blacknut by GAMELOFT application to access Cloud Game at www.ais.co.th/5G/CloudGame.</li>
+                            <li>Pressing the code to get the offer once means access from one account throughout the campaign period. The customer is required to press the code to get the offer within 30 days after starting to use the package. The offer cannot be cancelled or transferred to any person and no refund in part or in full will be given.</li>
+                            <li>Compatible with Android 5.0 or above smartphones.<br>
+                            	**Other smartphones including those with iOS are not supported. For more information, please go to www.ais.co.th/5G/CloudGame.
+                            </li>
+                            <li>After the free 90-day trial, the service will continue with a 299-Baht monthly service charge (VAT inclusive) and an SMS notification will be sent 3 days prior to the billing date.</li>
+                            <li>The AIS 5G Cloud Game service can be cancelled at AIS Shop or via AIS Call Center 1175. </li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </div>
+    
+</div>
+
+
+<div id="cloud_step4_holder">
+	<div class="row row_step4">
+        <div class="panel t_center">
+        	<div id="cloud_step_txt" class="cloud_step4_head">
+            	How it works
+            </div>
+        </div>
+    </div>
+    <div class="row row_step4">
+    	<ul class="cloud_step4_box_set">
+            <li id="cloud_step_box1">
+            	<div class="cloud_step4_box ais5g">
+                	<span>1</span><br>
+                    Subscribe to <br>the service
+                </div>
+            </li>
+            <li id="cloud_step_box2">
+            	<div class="cloud_step4_box blacknut">
+                	<span>2</span><br>
+                    Register <br>Receive an <div class="t_inline">SMS to confirm</div>
+                </div>
+            </li>
+            <li id="cloud_step_box3">
+            	<div class="cloud_step4_box gameloft">
+                	<span>3</span><br>
+                    Download the application.<br>Blacknut by GAMELOFT Here!<br>
+                    <a href="https://releases.blacknut.com/ais/last/BlacknutByGameloft.exe" target="_blank">Windows</a>, 
+                    <a href="https://releases.blacknut.com/ais/last/BlacknutByGameloft.dmg" target="_blank">Mac</a>, 
+                    <a href="https://releases.blacknut.com/ais/last/BlacknutByGameloft.AppImage" target="_blank">Linux</a>, 
+                    <a href="https://m.ais.co.th/cloudgame_download" target="_blank">Android</a>, 
+                    <a href="https://appgallery.huawei.com/#/app/C103174499" target="_blank">Huawei</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="row row_step4">
+    	<div class="panel t_center">
+        	<div id="cloud_step_note" class="cloud_step_note">
+            	<strong>The best Experience</strong><br>
+                should use with AIS 5G SIM or Wi-Fi and play through <div class="t_inline">the Game Controller.</div><br>
+                Information for SIM and AIS 5G Max Speed ​​packages <a href="https://www.ais.co.th/5g/join-us/postpaid/en/index.html" target="_blank">click!!</a><br>
+				
+                ** Note Game Controller must be a bluetooth support.
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="cloud_faq_holder">
+
+	<div class="row row_faq">
+        <div class="panel t_center">
+        	<div id="cloud_faq_txt" class="cloud_faq_head">FAQs</div>
+        </div>
+    </div>
+    
+    <div class="row row_faq">
+        <div class="panel t_center">
+        	<div class="row">
+            	<div class="col-xs-1 col_faq">
+                	<div id="cloud_faq_tab1" class="cloud_faq_tab active" onClick="cloud_faqList1(), cloud_faqSet(1);">Gaming <i></i><div class="t_inline">experience</div></div>
+                </div>
+                <div class="col-xs-1 col_faq">
+                	<div id="cloud_faq_tab2" class="cloud_faq_tab" onClick="cloud_faqList2(), cloud_faqSet(13);">Subscription <i></i><div class="t_inline">and payment</div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="cloud_faq_list1" class="row row_faq">
+        <div class="panel">
+        	
+            <div id="cloud_faq1" class="cloud_faq_set active" onClick="cloud_faqSet(1);">
+            	<div class="que">What are the devices that support the AIS 5G Cloud Game service ?</div>
+                <div id="cloud_ans1" class="ans" style="display:block;">From now to 1st November 2020, the service is compatible with Android devices only. After 1st November 2020, the service will be ready for use on PCs, Mac computers, Huawei, Android smartphones, Android IV and Linux, with more connectable accessories to be available soon. For optimum experience, the suggested internet speed is 6 Mbps minimum. The service experience may vary according the device used. </div>
+            </div>
+            
+            <div id="cloud_faq2" class="cloud_faq_set" onClick="cloud_faqSet(2);">
+            	<div class="que">Does the service support multiplayer mode ?</div>
+                <div id="cloud_ans2" class="ans">The service supports multiplayer mode for many games while some games will feature co-op mode where you can challenge your friends online. The co-op mode plus an extensive array of new games that allow multi players will be available soon. </div>
+            </div>
+            
+            <div id="cloud_faq3" class="cloud_faq_set" onClick="cloud_faqSet(3);">
+            	<div class="que">How do I save the game data ?</div>
+                <div id="cloud_ans3" class="ans">The file of a game will be managed by the particular game. Your game history will therefore be saved according to how the game manages players’ game data. </div>
+            </div>
+            
+            <div id="cloud_faq4" class="cloud_faq_set" onClick="cloud_faqSet(4);">
+            	<div class="que">Do I have to download games ?</div>
+                <div id="cloud_ans4" class="ans">No. Streaming technology makes it possible to play games right away, just with the AIS 5G Cloud Game service on Blacknut by GAMELOFT. What’s more is that no extra storage will be required and the app uses less than 100 MB.</div>
+            </div>
+            
+            <div id="cloud_faq5" class="cloud_faq_set" onClick="cloud_faqSet(5);">
+            	<div class="que">What kind of controllers can be used with AIS 5G Cloud Game on Blacknut by GAMELOFT ?</div>
+                <div id="cloud_ans5" class="ans">Xbox One or Bluetooth controllers to connect to your smartphone are recommended.<br><br>
+                **Some games in the catalogue are not compatible with all kinds of controllers, and this may affect your gaming experience. Information about the recommended controllers for a specific game is displayed on the game information page. Despite the fact that most games support a keyboard/mouse, controllers are recommended for your best experience
+                </div>
+            </div>
+<div id="cloud_faq_set2" style="display:none;">
+      
+            <div id="cloud_faq6" class="cloud_faq_set" onClick="cloud_faqSet(6);">
+            	<div class="que">What is the minimum internet speed required for AIS 5G Cloud Game ?</div>
+                <div id="cloud_ans6" class="ans">AIS 5G Cloud Game is a cloud gaming platform (real-time streaming) where internet network efficiency is required to ensure a stable connection, hence a maximum gaming experience. The minimum internet speed recommended is 6Mbps. Slow internet connection may result in data loss or audio/video distortion. Upon your opening of the Blacknut by GAMELOFT app, your internet connection status shall be tested and notified. 
+                </div>
+            </div>
+            
+            <div id="cloud_faq7" class="cloud_faq_set" onClick="cloud_faqSet(7);">
+            	<div class="que">In case a game is not correctly displayed and there is a problem, how should this be solved ?</div>
+                <div id="cloud_ans7" class="ans">If you are using a Wi-Fi network, try to stay as close to the router as possible. Avoid using two streaming services simultaneously or downloading a program while playing the cloud game. </div>
+            </div>
+            
+            <div id="cloud_faq8" class="cloud_faq_set" onClick="cloud_faqSet(8);">
+            	<div class="que">Is it possible to create different profiles for different players ?</div>
+                <div id="cloud_ans8" class="ans">Yes, it is possible to create numerous profiles on the application. Each profile contains different favorites and saved games. </div>
+            </div>
+            
+            <div id="cloud_faq9" class="cloud_faq_set" onClick="cloud_faqSet(9);">
+            	<div class="que">Is parental control possible ?</div>
+                <div id="cloud_ans9" class="ans">Yes. Parental control can be managed by creating a child’s user profile for AIS 5G Cloud Game on the Blacknut by GAMELOFT app.</div>
+            </div>
+            
+            <div id="cloud_faq10" class="cloud_faq_set" onClick="cloud_faqSet(10);">
+            	<div class="que">How can I access AIS 5G Cloud Game on the Blacknut by GAMELOFT app ?</div>
+                <div id="cloud_ans10" class="ans">To use AIS 5G Cloud Game, you are required to be an AIS pre-paid or post-paid customer and get connected to the internet (3G/4G/5G). You will automatically be logged in and checked. In case you get connected through Wi-Fi, follow the instructions and confirm with an OTP by entering your phone number on the app. Then, enter the OTP received via SMS on the log-in page.  </div>
+            </div>
+
+</div>  
+ 
+<div id="cloud_faq_set3" style="display:none;">
+
+            <div id="cloud_faq11" class="cloud_faq_set" onClick="cloud_faqSet(11);">
+            	<div class="que">How can I subscribe to the service ?</div>
+                <div id="cloud_ans11" class="ans">Please go to <a href="/5G/CloudGame" target="_blank">www.ais.co.th/5G/CloudGame</a> or press *528#call to learn how to subscribe. Once you have subscribed to the service, you have direct access to the games; otherwise, you will be asked to subscribe. </div>
+            </div>
+            
+            <div id="cloud_faq12" class="cloud_faq_set" onClick="cloud_faqSet(12);">
+            	<div class="que">How do I fix game errors ?</div>
+                <div id="cloud_ans12" class="ans">Please report problems through the Blacknut by GAMELOFT app. Explain the problem found by:  Step-by-step instructions / Phone number  / Device  / Game’s name  / Current connection (* Available after 1st November 2020) </div>
+            </div>
+            
+</div>
+            
+        </div>
+    </div>
+    
+    <div id="cloud_faq_list2" class="row row_faq" style="display: none;">
+        <div class="panel">
+        	
+            <div id="cloud_faq13" class="cloud_faq_set active" onClick="cloud_faqSet(13);">
+            	<div class="que">How can I cancel my AIS 5G Cloud Game <div class="t_inline">subscription ?</div></div>
+                <div id="cloud_ans13" class="ans">Before 1st November 2020, you can cancel your subscription by calling AIS Contact Center at1175. After 1st November 2020, your subscription can be cancelled directly through the application. After the cancellation, your saved data will still exist for your future access</div>
+            </div>
+            
+            <div id="cloud_faq14" class="cloud_faq_set" onClick="cloud_faqSet(14);">
+            	<div class="que">How can I subscribe to AIS 5G Cloud Game ?</div>
+                <div id="cloud_ans14" class="ans">After the application download, open the application and log in. You will then be asked to subscribe.</div>
+            </div>
+            
+            <div id="cloud_faq15" class="cloud_faq_set" onClick="cloud_faqSet(15);">
+            	<div class="que">How much is the AIS 5G Cloud Game service fee ?</div>
+                <div id="cloud_ans15" class="ans">The monthly service fee is 299 Baht.</div>
+            </div>
+            
+            <div id="cloud_faq16" class="cloud_faq_set" onClick="cloud_faqSet(16);">
+            	<div class="que">In case of inaccessibility to the service, what can be the cause ?</div>
+                <div id="cloud_ans16" class="ans">In case your payment is made prior to the expiry date and the extension cannot be verified, please check whether your SIM has a balance of over 299 Baht, and wait a day for your validity day extension. If this does not help, you are suggested to cancel your subscription and re-subscribe.</div>
+            </div>
+            
+        </div>
+    </div>
+    
+</div>
+    
+    <!--  Put Content Here จบเนื้อหา  -->
+    </div>
+<!--aisfooter-->
+<div id="aisfooter"></div>
+<!--aisfooter-->
+
+<script>
+var loadDeferredStyles = function() {
+var addStylesNode = document.getElementById("deferred-styles");
+var replacement = document.createElement("div");
+replacement.innerHTML = addStylesNode.textContent;
+document.body.appendChild(replacement)
+addStylesNode.parentElement.removeChild(addStylesNode);
+};
+var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+else window.addEventListener('load', loadDeferredStyles);
+</script>
+<!--<script src="/base_interface_th/js/jquery-3.2.1.min.js"></script>-->
+<script src="https://www.ais.co.th/base_interface/js/jquery-1.11.3.min.js"></script>
+<script src="https://www.ais.co.th/base_interface_th/js/jquery.nav.control.js"></script>
+<script src="https://www.ais.co.th/base_interface_th/js/jquery.typeahead.min.js"></script>
+<script src="https://www.ais.co.th/base_interface_th/js/menutypeahead.js"></script>
+<script src="../js/tweenmax.js"></script>
+<script src="../js/DNAparallax.js"></script>
+<script src="../plugins/jpreloader/jpreloader.js"></script>
+
+<script> 
+
+
+
+function swipperPic1(){
+	var swiper = new Swiper('.game_cover1', {
+		slidesPerView: 1,
+		slidesPerGroup: 1,
+		spaceBetween: 0,
+		effect:'cube',
+		speed:1000,
+		loop: true,
+		autoplay: {delay: 3000, disableOnInteraction: false,},
+	});
+}
+
+function swipperPic2(){
+	var swiper = new Swiper('.game_cover2', {
+		slidesPerView: 1,
+		slidesPerGroup: 1,
+		spaceBetween: 0,
+		effect:'cube',
+		speed:1000,
+		loop: true,
+		autoplay: {delay: 3000, disableOnInteraction: false,},
+	});
+}
+
+function swipperPic3(){
+	var swiper = new Swiper('.game_cover3', {
+		slidesPerView: 1,
+		slidesPerGroup: 1,
+		spaceBetween: 0,
+		effect:'cube',
+		speed:1000,
+		loop: true,
+		autoplay: {delay: 3000, disableOnInteraction: false,},
+	});
+}
+
+function swipperPic4(){
+	var swiper = new Swiper('.game_cover4', {
+		slidesPerView: 1,
+		slidesPerGroup: 1,
+		spaceBetween: 0,
+		effect:'cube',
+		speed:1000,
+		loop: true,
+		autoplay: {delay: 3000, disableOnInteraction: false,},
+	});
+}
+
+function swipperPic5(){
+	var swiper = new Swiper('.game_cover5', {
+		slidesPerView: 1,
+		slidesPerGroup: 1,
+		spaceBetween: 0,
+		effect:'cube',
+		speed:1000,
+		loop: true,
+		autoplay: {delay: 3000, disableOnInteraction: false,},
+	});
+}
+
+function goToDiv( id ){
+	setTimeout( function(){
+		$("html, body").animate({
+			scrollTop: $( '#' + id ).offset().top - 30
+		}, 1000);
+	}, 200);
+	return false;
+}
+
+function loadVid1(){
+	$('#tvc_screen1').hide();
+	$('#tvc1').load('../vid1.html', function(htmldata){});
+}
+
+function loadVid2(){
+	$('#tvc_screen2').hide();
+	$('#tvc2').load('../vid2.html', function(htmldata){});
+}
+
+
+$( "#pack_condi_bt" ).on( "click", function() {
+	$('#pack_condi_detail').slideToggle();
+	$('#pack_condi_bt').toggleClass('active');
+});
+
+$( "#pack_condi_bt2" ).on( "click", function() {
+	$('#pack_condi_detail2').slideToggle();
+	$('#pack_condi_bt2').toggleClass('active');
+});
+
+$( "#pack_condi_bt3" ).on( "click", function() {
+	$('#pack_condi_detail3').slideToggle();
+	$('#pack_condi_bt3').toggleClass('active');
+});
+
+function cloud_faqReset(){
+	$(".cloud_faq_set .ans").slideUp();
+	$(".cloud_faq_set").removeClass('active');
+}
+
+function cloud_faqSet(Target){
+	cloud_faqReset();
+	$("#cloud_ans"+Target).slideDown();
+	$("#cloud_faq"+Target).addClass('active');
+}
+
+function cloud_faqList1(){
+	$("#cloud_faq_tab1").addClass('active');
+	$("#cloud_faq_tab2").removeClass('active');
+	$('#cloud_faq_list1').fadeIn();
+	$('#cloud_faq_list2').fadeOut();
+	$('#cloud_faq_set2').hide();
+	$('#cloud_faq_set3').hide();
+}
+
+function cloud_faqList2(){
+	$("#cloud_faq_tab2").addClass('active');
+	$("#cloud_faq_tab1").removeClass('active');
+	$('#cloud_faq_list2').fadeIn();
+	$('#cloud_faq_list1').fadeOut();
+	$('#cloud_faq_set2').hide();
+	$('#cloud_faq_set3').hide();
+}
+
+function checkDevice(){
+
+	var dv;
+
+	if(navigator.userAgent.match(/Android/i)){dv = "Android";}
+	else if(navigator.userAgent.match(/BlackBerry/i)){dv = "BlackBerry";}
+	else if(navigator.userAgent.match(/iPhone/i)){dv = "iPhone";}
+	else if(navigator.userAgent.match(/iPad/i)){dv = "iPad";}
+	else if(navigator.userAgent.match(/iPod/i)){dv = "iPod";}
+	else if(navigator.userAgent.match(/Opera Mini/i)){dv = "Opera";}
+	else if(navigator.userAgent.match(/IEMobile/i)){dv = "WindowsMobile";}
+	if(dv == "Android" || dv == "BlackBerry" || dv == "iPhone" || dv == "iPod" || dv == "Opera" || dv == "WindowsMobile"){dv = "Mobile";}
+	else if(dv == "iPad") {dv = "Tablet";}
+	else{dv = "Desktop";}
+
+	return dv
+
+}
+  
+$(function() {
+	
+// jquery plugins jpreLoader begin //
+$('body').jpreLoader({
+	showSplash:true, // Show Image
+	showPercentage: true, // Show Percentage
+	loaderVPos: '70%',
+	autoClose: true,
+	splashFunction: function() {
+// ais interface setup load here //
+$('#container').css('visibility', 'hidden');
+ais_interface_setup('mini-menu','postpaid','en','','');
+$("a[href$='truehits.net/stat.php?login=ais']").css("display","none");
+
+swipperPic1();
+swipperPic2();
+swipperPic3();
+swipperPic4();
+swipperPic5();
+
+		}
+	}, function() {	//callback function
+
+		$('#container').css('visibility', 'visible');
+
+		window.scroll(0,0)
+		// alert(checkDevice())
+		if(checkDevice()=='Desktop'){
+
+var hilightAnimate = new TimelineMax({paused:false, repeat:0, yoyo:false, autoRemoveChildren:true});
+	hilightAnimate
+	.from( '#cloud_hilight_txt1', 1, {alpha:0, y:200, delay:0, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_hilight_txt2', 1, {alpha:0, y:200, delay:0.2, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_hilight_txt3', 1, {alpha:0, y:200, delay:0.4, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_hilight_logo', 1, {alpha:0, y:200, delay:0.6, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_hilight_bt', 1, {alpha:0, y:200, delay:0.8, ease:Expo.easeOut}, position=0)
+	
+var benefitAnimate1 = new TimelineMax();
+	benefitAnimate1
+	.from( '#tvc_screen1', 1, {alpha:0, y:250, scale:0, delay:0, ease:Expo.easeOut}, position=0)
+	
+var benefitAnimate2 = new TimelineMax();
+	benefitAnimate2
+	.from( '#cloud_benefit_txt1', 1, {alpha:0, y:200, delay:0, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_benefit_txt2', 1, {alpha:0, y:200, delay:0.2, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_benefit2', 1, {alpha:0, y:200, delay:0.4, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_benefit1', 1, {alpha:0, y:200, delay:0.6, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_benefit3', 1, {alpha:0, y:200, delay:0.6, ease:Expo.easeOut}, position=0)
+	
+var moregameAnimate1 = new TimelineMax();
+	moregameAnimate1
+	.from( '#cloud_moregame_txt1', 1, {alpha:0, y:200, delay:0, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_moregame_txt2', 1, {alpha:0, y:200, delay:0.2, ease:Expo.easeOut}, position=0)
+	.from( '#tvc_screen2', 1, {alpha:0, y:250, scale:0, delay:0.4, ease:Expo.easeOut}, position=0)
+	
+var moregameAnimate2 = new TimelineMax();
+	moregameAnimate2
+	.from( '#cloud_moregame_pic1', 0.5, {alpha:0, scale:0, delay:0, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_moregame_pic2', 0.5, {alpha:0, scale:0, delay:0.2, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_moregame_pic3', 0.5, {alpha:0, scale:0, delay:0.4, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_moregame_pic4', 0.5, {alpha:0, scale:0, delay:0.6, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_moregame_pic5', 0.5, {alpha:0, scale:0, delay:0.8, ease:Expo.easeOut}, position=0)
+	
+var packAnimate = new TimelineMax();
+	packAnimate
+	.from( '#cloud_pack_txt', 1, {alpha:0, x:300, delay:0, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_pack_box1', 2, {alpha:0, rotationY:180, delay:0.6, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_pack_box2', 2, {alpha:0, rotationY:180, delay:0.8, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_pack_box3', 2, {alpha:0, y:100, delay:1, ease:Expo.easeOut}, position=0)
+	
+var stepAnimate = new TimelineMax();
+	stepAnimate
+	.from( '#cloud_step_txt', 1, {alpha:0, y:200, delay:0, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_step_box2', 1, {alpha:0, y:200, delay:0.4, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_step_box1', 1, {alpha:0, y:200, delay:0.6, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_step_box3', 1, {alpha:0, y:200, delay:0.6, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_step_note', 1, {alpha:0, y:200, delay:0.8, ease:Expo.easeOut}, position=0)
+	
+var faqAnimate = new TimelineMax();
+	faqAnimate
+	.from( '#cloud_faq_txt', 1, {alpha:0, y:200, delay:0, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_faq_tab1', 1, {alpha:0, y:200, delay:0.4, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_faq_tab2', 1, {alpha:0, y:200, delay:0.6, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_faq1', 1, {alpha:0, x:300, delay:0.8, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_faq2', 1, {alpha:0, rotationX:180, delay:2, ease:Elastic.easeOut}, position=0)
+	.from( '#cloud_faq3', 1, {alpha:0, rotationX:180, delay:2.1, ease:Elastic.easeOut}, position=0)
+	.from( '#cloud_faq4', 1, {alpha:0, rotationX:180, delay:2.2, ease:Elastic.easeOut}, position=0)
+	.from( '#cloud_faq5', 1, {alpha:0, rotationX:180, delay:2.3, ease:Elastic.easeOut}, position=0)
+	.from( '#cloud_faq6', 1, {alpha:0, rotationX:180, delay:2.4, ease:Elastic.easeOut}, position=0)
+	.from( '#cloud_faq7', 1, {alpha:0, rotationX:180, delay:2.6, ease:Elastic.easeOut}, position=0)
+	.from( '#cloud_faq8', 1, {alpha:0, rotationX:180, delay:2.7, ease:Elastic.easeOut}, position=0)
+	.from( '#cloud_faq9', 1, {alpha:0, rotationX:180, delay:2.8, ease:Elastic.easeOut}, position=0)
+	.from( '#cloud_faq10', 1, {alpha:0, rotationX:180, delay:2.9, ease:Elastic.easeOut}, position=0)
+	.from( '#cloud_faq11', 1, {alpha:0, rotationX:180, delay:3, ease:Elastic.easeOut}, position=0)
+	.from( '#cloud_faq12', 1, {alpha:0, rotationX:180, delay:3.1, ease:Elastic.easeOut}, position=0)
+	
+	
+var intViewportHeight = -($(window).height()/4);
+var intViewportHeight2 = -($(window).height()/2);
+var screenH = (window.innerHeight);
+
+var parallax = $.DNAparallax();
+	parallax.addTween('#cloud_benefit_holder', (benefitAnimate1), 0, (intViewportHeight), true);
+	parallax.addTween('#tvc1', (benefitAnimate2), 0, (intViewportHeight), true);
+	parallax.addTween('#cloud_moregame_holder', (moregameAnimate1), 0, (intViewportHeight), true);
+	parallax.addTween('#tvc2', (moregameAnimate2), 0, (intViewportHeight), true);
+	parallax.addTween('#cloud_pack_holder', (packAnimate), 0, (intViewportHeight), true);
+	parallax.addTween('#cloud_step4_holder', (stepAnimate), 0, (intViewportHeight), true);
+	parallax.addTween('#cloud_faq_holder', (faqAnimate), 0, (intViewportHeight), true);
+	
+	parallax.addTween( '#cloud_moregame_holder', TweenMax.to( $('#cloud_benefit_holder'),0.5,{y:150}),(screenH),0);
+	parallax.addTween( '#cloud_pack_holder', TweenMax.to( $('#cloud_moregame_holder'),0.5,{y:100}),(screenH),0);
+	parallax.addTween( '#cloud_step4_holder', TweenMax.to( $('#cloud_pack_holder'),0.5,{y:50}),(screenH),0);
+	parallax.addTween( '#cloud_faq_holder', TweenMax.to( $('#cloud_step4_holder'),0.5,{y:100}),(screenH),0);
+	
+	
+          }
+		  
+	  else {
+// animate for Mobile
+		
+var hilightAnimate = new TimelineMax({paused:false, repeat:0, yoyo:false, autoRemoveChildren:true});
+	hilightAnimate
+	.from( '#cloud_hilight_txt1', 1, {alpha:0, y:200, delay:0, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_hilight_txt2', 1, {alpha:0, y:200, delay:0.2, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_hilight_txt3', 1, {alpha:0, y:200, delay:0.4, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_hilight_logo', 1, {alpha:0, y:200, delay:0.6, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_hilight_bt', 1, {alpha:0, y:200, delay:0.8, ease:Expo.easeOut}, position=0)
+	
+var benefitAnimate1 = new TimelineMax();
+	benefitAnimate1
+	.from( '#tvc_screen1', 1, {alpha:0, y:250, scale:0, delay:0, ease:Expo.easeOut}, position=0)
+	
+var benefitAnimate2 = new TimelineMax();
+	benefitAnimate2
+	.from( '#cloud_benefit_txt1', 1, {alpha:0, y:200, delay:0, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_benefit_txt2', 1, {alpha:0, y:200, delay:0.2, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_benefit2', 1, {alpha:0, y:100, delay:0.4, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_benefit1', 1, {alpha:0, y:100, delay:0.6, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_benefit3', 1, {alpha:0, y:100, delay:0.6, ease:Expo.easeOut}, position=0)
+	
+var moregameAnimate1 = new TimelineMax();
+	moregameAnimate1
+	.from( '#cloud_moregame_txt1', 1, {alpha:0, y:200, delay:0, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_moregame_txt2', 1, {alpha:0, y:200, delay:0.2, ease:Expo.easeOut}, position=0)
+	.from( '#tvc_screen2', 1, {alpha:0, y:250, scale:0, delay:0.4, ease:Expo.easeOut}, position=0)
+	
+var moregameAnimate2 = new TimelineMax();
+	moregameAnimate2
+	.from( '#cloud_moregame_pic1', 0.5, {alpha:0, scale:0, delay:0, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_moregame_pic2', 0.5, {alpha:0, scale:0, delay:0.2, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_moregame_pic3', 0.5, {alpha:0, scale:0, delay:0.4, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_moregame_pic4', 0.5, {alpha:0, scale:0, delay:0.6, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_moregame_pic5', 0.5, {alpha:0, scale:0, delay:0.8, ease:Expo.easeOut}, position=0)
+	
+var packAnimate = new TimelineMax();
+	packAnimate
+	.from( '#cloud_pack_txt', 1, {alpha:0, x:150, delay:0, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_pack_box1', 2, {alpha:0, rotationY:180, delay:0.6, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_pack_box2', 2, {alpha:0, rotationY:180, delay:0.8, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_pack_box3', 2, {alpha:0, y:100, delay:1, ease:Expo.easeOut}, position=0)
+	
+var stepAnimate = new TimelineMax();
+	stepAnimate
+	.from( '#cloud_step_txt', 1, {alpha:0, y:200, delay:0, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_step_box2', 1, {alpha:0, y:100, delay:0.4, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_step_box1', 1, {alpha:0, y:100, delay:0.6, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_step_box3', 1, {alpha:0, y:100, delay:0.6, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_step_note', 1, {alpha:0, y:100, delay:0.8, ease:Expo.easeOut}, position=0)
+	
+var faqAnimate = new TimelineMax();
+	faqAnimate
+	.from( '#cloud_faq_txt', 1, {alpha:0, y:200, delay:0, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_faq_tab1', 1, {alpha:0, y:200, delay:0.4, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_faq_tab2', 1, {alpha:0, y:200, delay:0.6, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_faq1', 1, {alpha:0, x:300, delay:0.8, ease:Expo.easeOut}, position=0)
+	.from( '#cloud_faq2', 1, {alpha:0, rotationX:180, delay:2, ease:Elastic.easeOut}, position=0)
+	.from( '#cloud_faq3', 1, {alpha:0, rotationX:180, delay:2.1, ease:Elastic.easeOut}, position=0)
+	.from( '#cloud_faq4', 1, {alpha:0, rotationX:180, delay:2.2, ease:Elastic.easeOut}, position=0)
+	.from( '#cloud_faq5', 1, {alpha:0, rotationX:180, delay:2.3, ease:Elastic.easeOut}, position=0)
+	.from( '#cloud_faq6', 1, {alpha:0, rotationX:180, delay:2.4, ease:Elastic.easeOut}, position=0)
+	.from( '#cloud_faq7', 1, {alpha:0, rotationX:180, delay:2.6, ease:Elastic.easeOut}, position=0)
+	.from( '#cloud_faq8', 1, {alpha:0, rotationX:180, delay:2.7, ease:Elastic.easeOut}, position=0)
+	.from( '#cloud_faq9', 1, {alpha:0, rotationX:180, delay:2.8, ease:Elastic.easeOut}, position=0)
+	.from( '#cloud_faq10', 1, {alpha:0, rotationX:180, delay:2.9, ease:Elastic.easeOut}, position=0)
+	.from( '#cloud_faq11', 1, {alpha:0, rotationX:180, delay:3, ease:Elastic.easeOut}, position=0)
+	.from( '#cloud_faq12', 1, {alpha:0, rotationX:180, delay:3.1, ease:Elastic.easeOut}, position=0)
+	
+	
+var intViewportHeight = -($(window).height()/4);
+var intViewportHeight2 = -($(window).height()/2);
+var screenH = (window.innerHeight);
+
+var parallax = $.DNAparallax();
+	parallax.addTween('#cloud_benefit_holder', (benefitAnimate1), 0, (intViewportHeight), true);
+	parallax.addTween('#tvc1', (benefitAnimate2), 0, (intViewportHeight), true);
+	parallax.addTween('#cloud_moregame_holder', (moregameAnimate1), 0, (intViewportHeight), true);
+	parallax.addTween('#tvc2', (moregameAnimate2), 0, (intViewportHeight), false);
+	parallax.addTween('#cloud_pack_holder', (packAnimate), 0, (intViewportHeight), true);
+	parallax.addTween('#cloud_step4_holder', (stepAnimate), 0, (intViewportHeight), true);
+	parallax.addTween('#cloud_faq_holder', (faqAnimate), 0, (intViewportHeight), true);
+	
+		
+
+	  }
+
+});
+// jquery plugins jpreLoader end //
+	
+$(window).on('scroll', function(){
+	  var scroll = $(window).scrollTop();
+	  var loadFAQ1 = $('#cloud_faq1').offset().top - 200;
+	  var loadFAQ2 = $('#cloud_faq1').offset().top;
+
+	  if(scroll > loadFAQ1) {
+		setTimeout( function(){$('#cloud_faq_set2').fadeIn();}, 1500);
+	  }
+	  
+	  if(scroll > loadFAQ2) {
+		setTimeout( function(){$('#cloud_faq_set3').fadeIn();}, 1500);
+	  }
+});
+  
+});
+</script>
+<script >
+ var digitalData = {
+              page:{
+                pageInfo:{
+                  pageName:"ais:en:5g:cloudgaming:index",
+                  site: "ais",
+                  language: "en"
+                },
+                category:{
+                  pageType:"content page",
+                  primaryCategory:"ais:en:5g",
+                  subCategory1: "ais:en:5g:cloudgaming",
+                  subCategory2: ""
+                }
+              }
+            };
+</script>
+   <script type="text/javascript">
+        var cX = cX || {};
+        cX.callQueue = cX.callQueue || [];
+        cX.callQueue.push(['setSiteId', '1139622151579595199']);
+        cX.callQueue.push(['sendPageViewEvent']);
+    </script>
+<script type="text/javascript">
+        (function(d, s, e, t) {
+            e = d.createElement(s);
+            e.type = 'text/java' + s;
+            e.async = 'async';
+            e.src = 'http' + ('https:' === location.protocol ? 's://s' : '://') + 'cdn.cxense.com/cx.js';
+            t = d.getElementsByTagName(s)[0];
+            t.parentNode.insertBefore(e, t);
+        })(document, 'script');
+    </script>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TC3PWS"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TC3PWS');</script>
+<!-- End Google Tag Manager -->
+<script>
+        function cstadb(categoryNameEn) {
+            digitalData.customLinkName = categoryNameEn;
+            _satellite.track("custom-link-click");
+        }
+    </script>
+    <script type="text/javascript">
+    _satellite.pageBottom();
+    </script>
+</body>
+</html>

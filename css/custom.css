@@ -1,0 +1,380 @@
+
+
+.row {max-width:1200px;}
+.row100 {max-width:none;}
+.panel{margin: 0px 10px; padding:0;}
+.pos{position: absolute; z-index: 1; }
+.pos_rel{position: relative;}
+.t_inline { display: inline-block;}
+.t_center{ text-align:center;}
+.t_right{ text-align:right;}
+.box_clear{clear:both;}
+
+/*-----------------all Space--------------------*/
+.v_gap5{ margin-bottom:5px; margin-top:5px; }.v_gap10{ margin-bottom:10px; margin-top:10px; }.v_gap15{ margin-bottom:15px; margin-top:15px; }.v_gap20{ margin-bottom:20px; margin-top:20px; }.v_gap25{ margin-bottom:25px; margin-top:25px; }.v_gap30{ margin-bottom:30px; margin-top:30px; }.v_gap35{ margin-bottom:35px; margin-top:35px; }.v_gap40{ margin-bottom:40px; margin-top:40px; }.v_gap45{ margin-bottom:45px; margin-top:45px; }.v_gap50{ margin-bottom:50px; margin-top:50px; }.box_pad5{padding:5px;}.box_pad10{padding:10px;}.box_pad15{padding:15px;}.box_pad20{padding:20px;}.box_pad25{padding:25px;}.box_pad30{padding:30px;}.box_pad35{padding:35px;}.box_pad40{padding:40px;}.box_pad45{padding:45px;}.box_pad50{padding:50px;}.t_gap5{margin-top:5px;}.t_gap10{margin-top:10px;}.t_gap15{margin-top:15px;}.t_gap20{margin-top:20px;}.t_gap25{margin-top:25px;}.t_gap30{margin-top:30px;}.t_gap35{margin-top:35px;}.t_gap40{margin-top:40px;}.t_gap45{margin-top:45px;}.t_gap50{margin-top:50px;}.b_gap5{margin-bottom:5px;}.b_gap10{margin-bottom:10px;}.b_gap15{margin-bottom:15px;}.b_gap20{margin-bottom:20px;}.b_gap25{margin-bottom:25px;}.b_gap30{margin-bottom:30px;}.b_gap35{margin-bottom:35px;}.b_gap40{margin-bottom:40px;}.b_gap45{margin-bottom:45px;}.b_gap50{margin-bottom:50px;}.l_gap5{margin-left:5px;}.l_gap10{margin-left:10px;}.l_gap15{margin-left:15px;}.l_gap20{margin-left:20px;}.l_gap25{margin-left:25px;}.l_gap30{margin-left:30px;}.l_gap35{margin-left:35px;}.l_gap40{margin-left:40px;}.l_gap45{margin-left:45px;}.l_gap50{margin-left:50px;}.r_gap5{margin-right:5px;}.r_gap10{margin-right:10px;}.r_gap15{margin-right:15px;}.r_gap20{margin-right:20px;}.r_gap25{margin-right:25px;}.r_gap30{margin-right:30px;}.r_gap35{margin-right:35px;}.r_gap40{margin-right:40px;}.r_gap45{margin-right:45px;}.r_gap50{margin-right:50px;}.t_pad5{padding-top:5px;}.t_pad10{padding-top:10px;}.t_pad15{padding-top:15px;}.t_pad20{padding-top:20px;}.t_pad25{padding-top:25px;}.t_pad30{padding-top:30px;}.t_pad35{padding-top:35px;}.t_pad40{padding-top:40px;}.t_pad45{padding-top:45px;}.t_pad50{padding-top:50px;}.b_pad5{padding-bottom:5px;}.b_pad10{padding-bottom:10px;}.b_pad15{padding-bottom:15px;}.b_pad20{padding-bottom:20px;}.b_pad25{padding-bottom:25px;}.b_pad30{padding-bottom:30px;}.b_pad35{padding-bottom:35px;}.b_pad40{padding-bottom:40px;}.b_pad45{padding-bottom:45px;}.b_pad50{padding-bottom:50px;}.l_pad5{padding-left:5px;}.l_pad10{padding-left:10px;}.l_pad15{padding-left:15px;}.l_pad20{padding-left:20px;}.l_pad25{padding-left:25px;}.l_pad30{padding-left:30px;}.l_pad35{padding-left:35px;}.l_pad40{padding-left:40px;}.l_pad45{padding-left:45px;}.l_pad50{padding-left:50px;}.r_pad5{padding-right:5px;}.r_pad10{padding-right:10px;}.r_pad15{padding-right:15px;}.r_pad20{padding-right:20px;}.r_pad25{padding-right:25px;}.r_pad30{padding-right:30px;}.r_pad35{padding-right:35px;}.r_pad40{padding-right:40px;}.r_pad45{padding-right:45px;}.r_pad50{padding-right:50px;}
+/*-----------------all Space--------------------*/
+
+
+
+/*Normal -------------------------------*/
+html{overflow-x:unset !important;}
+body{font-family: 'db_heaventcond'; color:#000; background-color:#fff;}
+
+
+/*=====================================================================*/
+/*=====================================================================*/
+/*=====================================================================*/
+/*All Style Hilight===================================================*/
+/*=====================================================================*/
+/*=====================================================================*/
+/*=====================================================================*/
+#cloud_hilight_holder{position: relative; width:100%; height: auto; padding-top:275px; padding-bottom:130px; background-color:#000; overflow:hidden;}
+.sliding-background { position:absolute; z-index:1; width: 6000px; height: 100%; left:0px; top:0px; background:url(../images/hilight_banner_bg.jpg) repeat-x #000; animation: slide 100s linear infinite;}
+
+@keyframes slide{
+  0%{transform: translate3d(0, 0, 0);}
+  100%{transform: translate3d(-2000px, 0, 0);} /*<====ความกว้างภาพหาร 3*/
+}
+
+.row_hilight{position: relative; z-index:2; max-width:825px;}
+.cloud_hilight_head{line-height:1.3; font-size:50px; color:#fff; text-shadow: 10px 10px 20px rgba(0,0,0,0.7), 10px 10px 20px rgba(0,0,0,0.7)}
+.cloud_hilight_head strong{font-weight:100; font-family: 'akrobatbold'; font-size:94px;}
+.cloud_hilight_logo{ margin-top:20px; margin-bottom:20px;}
+.cloud_hilight_bt{display:inline-block; font-family: 'db_heaventmed_cond'; line-height:1; font-size:30px; color:#fff; padding:12px 30px; padding-top:15px; border:solid 3px #fff; margin:20px; min-width:210px;}
+.cloud_hilight_bt:hover{background-color:rgba(181, 219, 0, 0.8); color:#000; cursor:pointer;}
+
+
+#cloud_benefit_holder{position: relative; width:100%; height: auto; padding-top:40px; padding-bottom:60px; background:url(../images/hilight_benefit_bg.jpg) no-repeat center bottom #000;}
+.row_benefit{position: relative; max-width:1052px;}
+.row_benefit2{position: relative; max-width:1020px;}
+.tvc_screen{position: relative;}
+.tvc_screen span{position:absolute; z-index:1; width:216px; height:216px; left:50%; top:50%; transform: translateY(-50%) translateX(-50%); -webkit-transform: translateY(-50%) translateX(-50%); -ms-transform: translateY(-50%) translateX(-50%);}
+.tvc_screen span:hover{width:180px; height:180px; cursor:pointer;}
+.cloud_benefit_head{font-family: 'db_heaventmed_cond'; line-height:1.3; font-size:66px; color:#fff; margin-top:90px; margin-bottom:60px;}
+.cloud_benefit_head i{display:none; height:1px; clear:both;}
+.cloud_benefit_box_set > li {width: 33.333%; list-style: none; display: block; height: auto; float: left; padding: 0; margin: 0; }
+.cloud_benefit_box_set > li:nth-of-type(1n) {clear: none; }
+.cloud_benefit_box_set > li:nth-of-type(3n+1) {clear: both; }
+.cloud_benefit_box{position: relative; margin:0px 20px; padding-top:180px; font-family: 'db_heaventmed_cond'; line-height:1.4; font-size:26px; color:#fff;}
+.cloud_benefit_box span{font-size:20px;}
+.cloud_benefit_box i{display:block; height:1px; clear:both;}
+.cloud_benefit_box.more{ background:url(../images/hilight_benefit_ic1.png) no-repeat center top;}
+.cloud_benefit_box.console{ background:url(../images/hilight_benefit_ic2.png) no-repeat center top;}
+.cloud_benefit_box.phone{ background:url(../images/hilight_benefit_ic3.png) no-repeat center top;}
+
+
+.flex-video {  position: relative; z-index:2;  padding-top: 1.38889rem; padding-bottom: 55%; height: 45px;}
+.flex-video.widescreen { padding-bottom: 56.34%; }
+.flex-video.vimeo { padding-top: 0; }
+.flex-video iframe,  .flex-video object,  .flex-video embed,  .flex-video video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+
+#cloud_moregame_holder{position: relative; z-index:3; width:100%; height: auto; padding-top:80px; background-color:#fff; overflow:hidden;}
+.row_moregame{position: relative; max-width:1366px;}
+.cloud_moregame_head{font-family: 'db_heaventmed_cond'; line-height:1.3; font-size:66px; color:#000; text-align:center; margin-bottom:80px;}
+.moregame_L{width:54.7%; background-color:#000;}
+.moregame_R{width:45.3%; background-color:#000;}
+.game_cover1{width:37.3%;}
+.game_cover2{width:62.7%;}
+.game_cover3{}
+.game_cover4{width:100%;}
+.game_cover5{width:100%;}
+
+.cloud_moregame_wrap{position:absolute; z-index:2; width:100%; height:100px; left:0px; bottom:0px; background:url(../images/hilight_game_bg.png) repeat-x left bottom; text-align:center; padding-top:15px;}
+.cloud_moregame_bt{display:inline-block; font-family: 'db_heaventmed_cond'; line-height:1; font-size:30px; color:#fff; padding:12px 30px; padding-top:15px; border:solid 3px #fff;}
+.cloud_moregame_bt:hover{background-color:rgba(181, 219, 0, 0.8); color:#000; cursor:pointer;}
+
+/*Responsive -------------------------------*/
+@media only screen and (min-width: 1367px) and (max-width: 2400px) {
+#cloud_benefit_holder{ background-size:100% auto;}
+} 
+
+@media screen and (max-width: 1020px) {
+.cloud_benefit_head{font-size:40px; margin-top:60px; margin-bottom:40px;}
+.tvc_screen span{width:180px; height:180px;}
+.tvc_screen span:hover{width:150px; height:150px;}
+.cloud_benefit_box{margin:0px 20px; padding-top:140px; line-height:1.4; font-size:20px;}
+.cloud_benefit_box span{font-size:16px;}
+.cloud_benefit_box.more,
+.cloud_benefit_box.console,
+.cloud_benefit_box.phone{ background-size:190px auto;}
+
+#cloud_moregame_holder{padding-top:40px;}
+.cloud_moregame_head{font-size:40px; margin-bottom:40px;}
+
+.cloud_moregame_wrap{height:80px; padding-top:20px; background-size:100% 100%;}
+.cloud_moregame_bt{font-size:22px; padding:10px 20px; padding-top:12px; border:solid 2px #fff;}
+}
+
+@media screen and (max-width: 960px) {
+#cloud_hilight_holder{padding-top:190px; padding-bottom:100px;}
+.sliding-background{ background-size:2000px auto;}
+.cloud_hilight_head{font-size:40px;}
+.cloud_hilight_head strong{font-size:70px;}
+.cloud_hilight_logo{ margin-top:10px; margin-bottom:0px; height:130px;}
+}
+
+
+@media screen and (max-width: 740px) {
+.moregame_L{width:100%;}
+.moregame_R{width:100%;}
+.game_cover4{width:42%; left:58%;}
+.game_cover5{width:58%; right:42%;}
+
+.cloud_benefit_head{font-size:36px; margin-top:40px; margin-bottom:30px;}
+.cloud_benefit_box{margin:0px 10px; padding-top:120px; line-height:1.4; font-size:16px;}
+.cloud_benefit_box span{font-size:12px;}
+.cloud_benefit_box.more,
+.cloud_benefit_box.console,
+.cloud_benefit_box.phone{ background-size:150px auto;}
+
+#cloud_moregame_holder{padding-top:35px;}
+.cloud_moregame_head{font-size:36px; margin-bottom:30px;}
+}
+
+@media screen and (max-width: 600px) {
+#cloud_hilight_holder{padding-top:160px; padding-bottom:30px;}
+.sliding-background{ background-size:1700px auto;}
+.cloud_hilight_head{font-size:30px;}
+.cloud_hilight_head strong{ line-height:1; font-size:60px;}
+.cloud_hilight_logo{ margin-top:10px; margin-bottom:0px; height:120px;}
+
+#cloud_benefit_holder{padding-top:10px; padding-bottom:40px; background-size:auto 100%;}
+.tvc_screen span{width:80px; height:80px;}
+.tvc_screen span:hover{width:60px; height:60px;}
+
+.cloud_moregame_wrap{height:60px; padding-top:10px;}
+.cloud_moregame_bt{font-size:20px; padding:8px 15px; padding-top:10px; border:solid 1px #fff;}
+}
+
+@media screen and (max-width: 500px) {
+.cloud_benefit_head{font-size:34px; margin-top:40px; margin-bottom:30px;}
+.cloud_benefit_head i{display:block;}
+.cloud_benefit_box{margin:0px 2px; padding-top:85px; line-height:1.2; font-size:16px;}
+.cloud_benefit_box.more,
+.cloud_benefit_box.console,
+.cloud_benefit_box.phone{ background-size:110px auto;}
+}
+
+
+
+/*=====================================================================*/
+/*=====================================================================*/
+/*=====================================================================*/
+/*All Style FAQ--PACKAGE--STEP  =======================================*/
+/*=====================================================================*/
+/*=====================================================================*/
+/*=====================================================================*/
+#cloud_faq_holder{position: relative; width:100%; height: auto; padding-top:70px; padding-bottom:90px; background-color:#fff; overflow:hidden;}
+.row_faq{ max-width:990px;}
+.cloud_faq_head{display:inline-block; font-family: 'db_heaventmed_cond'; line-height:1.2; font-size:62px; color:#87B201; margin-bottom:40px; padding:15px 120px 10px 0px; background:url(../images/faq_head_ic.png) no-repeat center right;}
+.col_faq{width:50%;}
+
+.cloud_faq_tab{position: relative; padding:18px; background-color:#E6E6E6; font-family: 'db_heaventmed_cond'; line-height:1.4; font-size:24px; color:#000; margin-bottom:25px;}
+.cloud_faq_tab:hover, .cloud_faq_tab.active{z-index:2; background-color:#A8D925; box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3); cursor:pointer;}
+.cloud_faq_tab i{display: none; height:1px; clear:both;}
+.cloud_faq_set{position: relative; background-color:#fff; border:solid 2px #E6E6E6; font-family: 'db_heaventmed_cond'; line-height:1.4; font-size:20px; color:#565656; margin-bottom:15px;}
+.cloud_faq_set .que{position: relative; padding:15px 55px 15px 35px; background:url(../images/faq_ic_off.png) no-repeat center right 35px;}
+.cloud_faq_set .ans{position: relative; padding:15px 25px 15px 35px; background-color:#E6E6E6; display:none;}
+
+.cloud_faq_set:hover, .cloud_faq_set.active{border:solid 2px #94C318; cursor:pointer;}
+.cloud_faq_set:hover .que, .cloud_faq_set.active .que{ background-image:url(../images/faq_ic_on.png);}
+
+.cloud_faq_set a:link, .cloud_faq_set a:visited, .cloud_faq_set a:active{ text-decoration: underline; color:#87B202;}
+.cloud_faq_set a:hover{text-decoration: none; color:#999;}
+
+
+
+#cloud_pack_holder{position: relative; z-index:2; width:100%; height: auto; padding-top:55px; margin-bottom:-50px; overflow:hidden;}
+.row_pack_head{max-width:990px;}
+.cloud_pack_head{display:inline-block; font-family: 'db_heaventmed_cond'; line-height:1; font-size:66px; color:#000; text-align:left; margin-bottom:20px; padding:90px 0px 50px 300px; background:url(../images/pack_head_pic.jpg) no-repeat center left;}
+.cloud_pack_head strong, .cloud_pack_head b{ font-weight:100; font-family: 'akrobatbold'; font-size:94px; color:#6AAD05;}
+.row_pack_box{max-width:1186px;}
+.col_std{width:50%;}
+.col_maxx{width:45%;}
+
+.cloud_pack_box{position: relative; background-color:#A8D925; padding-top:55px; padding-bottom:30px; color:#000; text-align:center; overflow:hidden;}
+.cloud_pack_box::before{content: ''; position:absolute; z-index:1; width:200px; height:100px; left:-66px; top:-18px; transform:rotate(-45deg); -webkit-transform:rotate(-45deg); -ms-transform:rotate(-45deg); background-color:#fff;}
+.cloud_pack_box .regis{font-family: 'db_heaventcond'; line-height:1.2; font-size:26px; margin:10px 0px;}
+.cloud_pack_box .regis sub{font-size:44px; position: relative; top:15px;}
+.cloud_pack_box .price{display:inline-block; position: relative; font-family: 'akrobatextrabold'; line-height:0.7; font-size:190px; margin-bottom:20px; margin-right:110px;}
+.cloud_pack_box .price span{font-family: 'db_heaventbold_cond'; line-height:1; font-size:45px; text-align: left; position:absolute; z-index:1; width:150px; height:80px; right:-160px; bottom:5px;}
+.cloud_pack_box .regis_bt{ display:inline-block; font-family: 'db_heaventbold_cond'; line-height:1; font-size:30px; color:#fff; padding:15px 40px; padding-top:18px; background-color:#000; margin:10px; margin-bottom:25px;}
+.cloud_pack_box .only_phone{font-family: 'db_heaventcond'; line-height:1.2; font-size:18px; margin-bottom:25px;}
+.cloud_pack_box .regis_bt:hover{background-color:#fff; color:#000; cursor:pointer;}
+.cloud_pack_box .condi_bt{ display:inline-block; position:relative; padding-right:22px; font-family: 'db_heaventcond'; line-height:1.2; font-size:20px;}
+.cloud_pack_box .condi_bt::before{content: ''; position:absolute; z-index:1; width:12px; height:2px; right:0px; top:50%; background-color:#000;}
+.cloud_pack_box .condi_bt::after{content: ''; position:absolute; z-index:1; width:2px; height:12px; right:5px; top:50%; margin-top:-5px; background-color:#000;}
+.cloud_pack_box .condi_bt:hover{cursor:pointer;}
+.cloud_pack_box .condi_bt.active::after{ display:none;}
+.cloud_pack_box .condi_detail{font-family: 'db_heaventcond'; line-height:1.4; font-size:18px; text-align:left; margin:0px 30px; margin-top:20px; display:none;}
+.cloud_pack_box .condi_detail ul li{ list-style:square; margin-left:20px;}
+.cloud_pack_box .maxx_detail{font-family: 'db_heaventmed_cond'; line-height:1.4; font-size:34px; color:#fff; margin-top:30px; margin-bottom:23px;}
+.cloud_pack_box .maxx_detail strong{font-weight:100; font-family: 'akrobatextrabold'; color:#B0DB4E;}
+.cloud_pack_box .maxx_detail i{display:block; height:1px; clear:both;}
+
+.cloud_pack_box.black{ background-color:#000; padding-top:20px; margin-top:20px;}
+.cloud_pack_box.black::before{display:none;}
+.cloud_pack_box.black .regis_bt{ background-color:#000; color:#fff; border:solid 2px #fff;}
+.cloud_pack_box.black .regis_bt:hover{background-color:#B0DB4E; color:#000;}
+.cloud_pack_box.black .only_phone{color:#fff;}
+.cloud_pack_box.black .condi_bt{color:#fff;}
+.cloud_pack_box.black .condi_bt::before,
+.cloud_pack_box.black .condi_bt::after{background-color:#fff;}
+.cloud_pack_box.black .condi_detail{color:#fff; margin: 0px 30px; margin-top:20px;}
+
+.cloud_pack_box a:link, .cloud_pack_box a:visited, .cloud_pack_box a:active{ text-decoration: none; color:#A8D925;}
+.cloud_pack_box a:hover{text-decoration: underline; color:#ccc;}
+
+.col_name{width:45%; font-family: 'akrobatextrabold'; line-height:1; font-size:50px; text-align:right;}
+.col_price{width:55%; font-family: 'db_heaventbold_cond'; line-height:1; font-size:45px; text-align: left; text-indent:20px;}
+.col_price strong{font-weight:100; font-family: 'akrobatextrabold'; line-height:0.7; font-size:134px;}
+
+
+
+#cloud_step4_holder{position: relative; z-index:1; width:100%; height: auto; padding-top:125px; padding-bottom:25px; background:url(../images/step_bg.jpg) no-repeat right bottom #F1F1F1;}
+.row_step4{max-width:940px;}
+.cloud_step4_head{font-family: 'db_heaventmed_cond'; line-height:1.2; font-size:66px; color:#000; margin-bottom:65px;}
+.cloud_step4_head strong{font-weight:100; color:#87B202;}
+.cloud_step4_box_set > li {width: 33.333%; list-style: none; display: block; height: auto; float: left; padding: 0; margin: 0; }
+.cloud_step4_box_set > li:nth-of-type(1n) {clear: none; }
+.cloud_step4_box_set > li:nth-of-type(3n+1) {clear: both; }
+.cloud_step4_box{position: relative; margin:0px 10px; padding-top:160px; font-family: 'db_heaventmed_cond'; line-height:1.2; font-size:24px; text-align:center;}
+.cloud_step4_box span{ display:inline-block; width:36px; height:36px; border:solid 4px #87B202; border-radius:100px; margin-bottom:10px;}
+.cloud_step4_box .note{font-size:20px;}
+.cloud_step4_box i{display:block; height:1px; clear:both;}
+.cloud_step4_box.ais5g{ background:url(../images/step_ic1.png) no-repeat center top;}
+.cloud_step4_box.blacknut{ background:url(../images/step_ic2.png) no-repeat center top;}
+.cloud_step4_box.gameloft{ background:url(../images/step_ic3.png) no-repeat center top;}
+.cloud_step4_box.playgame{ background:url(../images/step_ic4.png) no-repeat center top;}
+
+#cloud_step4_holder a:link, #cloud_step4_holder a:visited, #cloud_step4_holder a:active{ text-decoration: underline; color:#87B202;}
+#cloud_step4_holder a:hover{text-decoration: none; color:#999;}
+
+.cloud_step_note{line-height:1.2; font-size:24px; margin-top:40px;}
+.cloud_step_note strong{ font-weight:100; font-family: 'db_heaventmed_cond'; font-size:30px;}
+
+/*Responsive -------------------------------*/
+@media screen and (max-width: 1020px) {
+#cloud_faq_holder{padding-top:40px; padding-bottom:50px;}
+.cloud_faq_head{font-size:40px; margin-bottom:30px; padding:15px 80px 10px 0px; background-size:70px auto;}
+.cloud_faq_tab{padding:12px; font-size:20px;}
+.cloud_faq_set{font-size:18px; margin-bottom:10px;}
+.cloud_faq_set .que{padding:10px 35px 10px 20px; background:url(../images/faq_ic_off.png) no-repeat center right 10px;}
+.cloud_faq_set .ans{padding:10px 15px 10px 20px;}
+
+
+#cloud_pack_holder{padding-top:35px;}
+.cloud_pack_head{font-size:40px; margin-bottom:10px; padding:70px 0px 50px 200px; background-size:210px auto;}
+.cloud_pack_head strong, .cloud_pack_head b{font-size:60px;}
+
+.cloud_pack_box{padding-top:40px; padding-bottom:20px;}
+.cloud_pack_box::before{width:140px; height:100px; left:-66px; top:-38px;}
+.cloud_pack_box .regis{font-size:20px; margin:10px 0px;}
+.cloud_pack_box .regis sub{font-size:34px; top:10px;}
+.cloud_pack_box .price{font-size:142px; margin-bottom:20px; margin-right:90px;}
+.cloud_pack_box .price span{font-size:30px; width:75px; height:60px; right:-85px; bottom:0px;}
+.cloud_pack_box .regis_bt{font-size:22px; padding:10px 20px; padding-top:12px; margin:10px; margin-bottom:15px;}
+.cloud_pack_box .only_phone{font-size:18px; margin-bottom:15px;}
+.cloud_pack_box .condi_bt{ font-size:18px; padding-top:2px;}
+.cloud_pack_box .condi_detail{font-size:14px; margin:0px 30px; margin-top:20px; display:none;}
+.cloud_pack_box .maxx_detail{font-size:22px;}
+
+.col_name{font-size:30px;}
+.col_price{font-size:30px; text-indent:10px;}
+.col_price strong{font-size:80px;}
+
+#cloud_step4_holder{ background-size:auto 100%;}
+.cloud_step4_head{font-size:40px; margin-bottom:45px;}
+.cloud_step4_box{padding-top:160px; font-size:20px;}
+.cloud_step4_box .note{font-size:16px;}
+.cloud_step4_box span{width:32px; height:32px; padding-top:3px; border:solid 3px #87B202; margin-bottom:10px;}
+}
+
+@media screen and (max-width: 900px) {
+.cloud_step4_box{padding-top:110px; font-size:18px;}
+.cloud_step4_box.ais5g,
+.cloud_step4_box.blacknut,
+.cloud_step4_box.gameloft,
+.cloud_step4_box.playgame{background-size:150px auto;}
+.cloud_step4_box i{display:none;}
+}
+
+/*@media screen and (max-width: 750px) {
+.cloud_pack_box .regis_bt{ display:inline-block;}
+.cloud_pack_box .only_phone{display:none;}
+}*/
+
+@media screen and (max-width: 700px) {
+#cloud_step4_holder{padding-top:35px; padding-bottom:20px; background-image:url(../images/step_bg2.jpg); background-color:#EDEDED;}
+/*.cloud_step4_box_set > li {width: 50%; list-style: none; display: block; height: auto; float: left; padding: 0; margin: 0; }
+.cloud_step4_box_set > li:nth-of-type(1n) {clear: none; }
+.cloud_step4_box_set > li:nth-of-type(2n+1) {clear: both; }*/
+.cloud_step4_box{margin:0px 15px; font-size:16px;}
+.cloud_step4_box .note{font-size:12px;}
+
+.cloud_faq_tab{padding:12px; line-height:1.2; font-size:18px;}
+.cloud_faq_set{font-family: 'db_heaventcond'; font-size:14px;}
+.cloud_faq_set .que{padding:10px 35px 10px 10px;}
+.cloud_faq_set .ans{padding:10px 15px 10px 10px;}
+
+.cloud_pack_box .only_phone{font-size:16px; margin-bottom:15px;}
+
+.cloud_step_note{font-size:14px; margin-top:30px;}
+.cloud_step_note strong{font-size:18px;}
+}
+
+
+@media screen and (max-width: 660px) {
+.col_std{width:100%; padding:10px 0px;}
+.cloud_pack_box.black{ margin-top:10px;}
+.col_maxx{width:100%;}
+#cloud_pack_holder{margin-bottom:0px;}
+.cloud_pack_head{display:inline-block;}
+.cloud_pack_head b{font-size:40px; display:inline-block;}
+.cloud_pack_box .maxx_detail{margin-top:5px; margin-bottom:15px;}
+.cloud_pack_box .maxx_detail i{display: none;}
+.cloud_pack_box.white{ padding-top:10px;}
+}
+
+@media screen and (max-width: 540px) {
+.cloud_faq_head{font-size:36px; margin-bottom:20px;}
+
+#cloud_pack_holder{padding-top:15px;}
+.row_pack_head{max-width:370px;}
+.cloud_pack_head{font-size:36px; margin-bottom:10px; padding:36px 0px 50px 180px; background-size:190px auto;}
+.cloud_pack_head strong{font-size:60px;}
+.cloud_pack_head b{font-size:38px; display:inline-block;}
+
+.col_name{width:50%;}
+.col_price{width:50%;}
+.cloud_pack_box .price{font-size:120px; margin-bottom:15px; margin-right:70px;}
+.cloud_pack_box .price span{font-size:24px; width:60px; height:50px; right:-65px; bottom:0px;}
+.cloud_step4_box.gameloft{background-size:120px auto; background-position:center top 5px;}
+
+.cloud_pack_box .condi_detail,
+.cloud_pack_box.black .condi_detail{margin:0px 20px; margin-top:15px;}
+
+.cloud_faq_tab i{display: block;}
+}
+
+@media screen and (max-width: 420px) {
+.cloud_step4_box{padding-top:100px; margin:0px 2px;}
+.cloud_step4_box.ais5g,
+.cloud_step4_box.blacknut{background-size:130px auto;}
+/*.cloud_step4_box.gameloft{background-size:100px auto; background-position:center top 20px;}*/
+}
+
+
+
+
+
+
+/*.cloud_faq_tab, .cloud_faq_set, */.cloud_pack_box .regis_bt, .cloud_hilight_bt, .tvc_screen span, .cloud_moregame_bt
+{transition: all .2s ease-in; -webkit-transition: all .2s ease-in;  -moz-transition: all .2s ease-in; -o-transition: all .2s ease-in; }
+
+
+
+
+
+
